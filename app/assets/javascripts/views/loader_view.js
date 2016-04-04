@@ -12,10 +12,7 @@
       loading: null
     },
 
-    initialize: function(settings) {
-      if (!settings.data) {
-        throw new Error('"data" param is required.');
-      }
+    initialize: function() {
       this.listenTo(this.state, 'change', this.render);
     },
 
