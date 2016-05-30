@@ -44,6 +44,29 @@
               [ 'ordinal' ],
               [ 'quantitative' ]
           ]
+        },
+        {
+          name: 'scatter',
+          acceptedStatTypes: [
+            [ 'quantitative', 'quantitative' ],
+            [ 'nominal', 'nominal' ],
+            [ 'nominal', 'ordinal' ],
+            [ 'ordinal', 'ordinal' ]
+          ]
+        },
+        {
+          name: '1d_scatter',
+          acceptedStatTypes: [
+            [ 'quantitative' ],
+            [ 'temporal' ]
+          ]
+        },
+        {
+          name: '1d_tick',
+          acceptedStatTypes: [
+            [ 'quantitative' ],
+            [ 'temporal' ]
+          ]
         }
       ],
       chartsTypes: {
@@ -70,7 +93,15 @@
         {
           label: 'Category',
           name: 'category'
-        }]
+        }],
+        scatter: [{
+          label: 'X axis',
+          name: 'x'
+        },
+        {
+          label: 'Y axis',
+          name: 'y'
+        }],
       }
     },
 

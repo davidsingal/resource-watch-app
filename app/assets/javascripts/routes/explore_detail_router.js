@@ -88,6 +88,11 @@
         buckets: ['#FFFFFF'],
         secondaryColor: '#76C9DE'
       });
+      this.chartScatter = new App.View.ChartScatter({
+        mainColor: '#FFFFFF',
+        buckets: ['#FFFFFF'],
+        secondaryColor: '#76C9DE'
+      });
 
       // Tooltip
       this.tooltip = new App.View.Tooltip({
@@ -148,6 +153,10 @@
         });
       } else if (type === 'line') {
         chartData = this.chartLine.getData({
+          values: data
+        });
+      } else if (type === 'scatter') {
+        chartData = this.chartScatter.getData({
           values: data
         });
       }
